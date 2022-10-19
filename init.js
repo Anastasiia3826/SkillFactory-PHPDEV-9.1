@@ -1,6 +1,8 @@
 
 document.getElementById('genResult').addEventListener('click', () =>
 {
+
+    // Обработка кнопки genResult. По нажатию обновляем данные. 
     const initPerson = personGenerator.getPerson();
     document.getElementById('firstNameOutput').innerText = initPerson.firstName;
     document.getElementById('surnameOutput').innerText = initPerson.surname;
@@ -12,6 +14,8 @@ document.getElementById('genResult').addEventListener('click', () =>
 });
 
 document.getElementById('resetResult').addEventListener('click', () => {
+
+     // Обработка кнопки resetResult. Очистка результата. 
     document.getElementById('firstNameOutput').innerText = '';
     document.getElementById('surnameOutput').innerText = '';
     document.getElementById('middleNameOutput').innerText = '';

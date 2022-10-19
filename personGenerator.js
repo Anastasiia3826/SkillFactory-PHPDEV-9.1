@@ -126,7 +126,7 @@ const personGenerator = {
 
     randomValue: function (json) {
         const obj = JSON.parse(json);
-        const prop = `id_${this.randomIntNumber(obj.count, 1)}`;  // this = personGenerator
+        const prop = `id_${this.randomIntNumber(obj.count, 1)}`;  
         return obj.list[prop];
     },
     
@@ -203,6 +203,7 @@ const personGenerator = {
 
 
     getPerson: function () {
+        // Вызов
         this.person = {};
         this.person.gender = this.randomGender();
         this.person.firstName = this.randomFirstName();
